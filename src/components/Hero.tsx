@@ -41,8 +41,7 @@ const Hero = () => {
           {/* Professional Summary */}
           <div className="fade-in fade-in-delay-1">
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Building production-ready Generative AI systems using RAG, prompt engineering, 
-              and LLM fine-tuning in healthcare and finance.
+             AI Engineer specializing in building production-grade Generative AI and computer vision solutions. Experienced in healthcare, finance, and real-time applications with a track record of winning hackathons and delivering scalable systems.
             </p>
           </div>
 

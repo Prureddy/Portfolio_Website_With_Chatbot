@@ -146,7 +146,7 @@ const Education = () => {
           </div>
         </div>
 
-        {/* Learning Philosophy */}
+        {/* Learning Philosophy
         <div className="mt-16 text-center">
           <div className="glass rounded-xl p-8 electric-glow max-w-2xl mx-auto">
             <BookOpen className="w-8 h-8 text-primary mx-auto mb-4" />
@@ -157,7 +157,7 @@ const Education = () => {
               Staying updated with the latest AI advancements through continuous learning and hands-on practice
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

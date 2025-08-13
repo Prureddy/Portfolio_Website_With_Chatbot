@@ -12,13 +12,13 @@ const Skills = () => {
     {
       icon: Code,
       title: "Languages & Frameworks",
-      skills: ["Python", "SQL", "React.js", "FastAPI", "Flask", "Django", "JavaScript", "HTML", "CSS"],
+      skills: ["Python", "FastAPI", "Flask", "Django", "JavaScript", "SQL","PostgreSQL","React.js",],
       color: "electric-blue"
     },
     {
       icon: Brain,
       title: "Generative AI",
-      skills: ["LLaMA 2", "Groq", "Prompt Engineering", "RAG", "PEFT", "LoRA", "Model Deployment"],
+      skills: ["RAG","LLM Finetuning(PEFT)","AI Agents","MCP Servers","Prompt Engineering","Context Engineering","OCR","NER","Text Embedding",],
       color: "electric-purple"
     },
     {

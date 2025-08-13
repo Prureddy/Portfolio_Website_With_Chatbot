@@ -114,7 +114,7 @@ const Contact = () => {
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 I'm always excited to discuss new opportunities, collaborate on innovative AI projects, 
-                or simply chat about the latest developments in artificial intelligence and machine learning.
+                or simply chat about the latest developments in Artificial Intelligence and Machine Learning.
               </p>
             </div>
 
