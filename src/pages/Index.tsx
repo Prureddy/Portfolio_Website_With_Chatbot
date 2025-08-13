@@ -43,7 +43,7 @@ const Index = () => {
         <Suspense fallback={<div className="container mx-auto my-8 h-24 rounded-xl bg-muted/20 animate-pulse" aria-hidden />}> <Experience /> </Suspense>
         <Suspense fallback={<div className="container mx-auto my-8 h-24 rounded-xl bg-muted/20 animate-pulse" aria-hidden />}> <Education /> </Suspense>
         <Suspense fallback={<div className="container mx-auto my-8 h-24 rounded-xl bg-muted/20 animate-pulse" aria-hidden />}> <Hackathons /> </Suspense>
-        <Suspense fallback={<div className="container mx-auto my-8 h-24 rounded-xl bg-muted/20 animate-pulse" aria-hidden />}> <Testimonials /> </Suspense>
+        {/* <Suspense fallback={<div className="container mx-auto my-8 h-24 rounded-xl bg-muted/20 animate-pulse" aria-hidden />}> <Testimonials /> </Suspense> */}
         <Suspense fallback={<div className="container mx-auto my-8 h-24 rounded-xl bg-muted/20 animate-pulse" aria-hidden />}> <Contact /> </Suspense>
       </main>
       <Footer />

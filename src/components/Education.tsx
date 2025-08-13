@@ -33,7 +33,6 @@ const Education = () => {
   const achievements = [
     "Consistent academic performance with strong foundation in Computer Science",
     "Active participation in technical workshops and AI conferences",
-    "Member of university's AI and Machine Learning club",
     "Contributed to open-source projects during academic tenure"
   ];
 

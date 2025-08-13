@@ -24,7 +24,7 @@ const Skills = () => {
     {
       icon: Database,
       title: "Data Engineering",
-      skills: ["ETL", "Data Cleaning", "Qdrant", "FAISS", "Pinecone", "ChromaDB"],
+      skills: ["ETL", "Data Cleaning", "Qdrant", "FAISS", "Pinecone", "ChromaDB","Azure Form Recognizer","Tesseract"],
       color: "electric-cyan"
     },
     {
@@ -36,7 +36,7 @@ const Skills = () => {
     {
       icon: Wrench,
       title: "Tools & Platforms",
-      skills: ["LangChain", "OpenAI API", "Gemini", "Jupyter Notebook", "Jira"],
+      skills: ["LangChain", "Hugging Face","OpenAI API", "Gemini", "Jupyter Notebook", "Jira", "VS Code"],
       color: "electric-blue"
     }
   ];

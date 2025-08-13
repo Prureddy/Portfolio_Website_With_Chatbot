@@ -6,7 +6,7 @@ const Experience = () => {
       title: "AI Engineer",
       company: "Unriddle Technologies",
       period: "Jun 2025 – Present",
-      location: "Remote",
+      location: "Shivamogga, India",
       type: "Full-time",
       achievements: [
         "Led RAG-based medical discharge summary pipeline for hospital-wide scalability",
@@ -14,7 +14,7 @@ const Experience = () => {
         "Implemented production-ready AI systems serving healthcare professionals",
         "Optimized LLM performance through advanced prompt engineering techniques"
       ],
-      technologies: ["RAG", "LLM Fine-tuning", "Python", "FastAPI", "AWS", "LangChain"],
+      technologies: ["RAG", "LLM Fine-tuning", "Python", "FastAPI", "AWS", "LangChain","Prompt Engineering","NER","Medical Text Extraction"],
       gradient: "from-electric-blue to-electric-cyan"
     },
     {
@@ -27,9 +27,24 @@ const Experience = () => {
         "Enhanced multilingual RAG chatbot accuracy by 35%",
         "Built AI-powered math equation solver integrating OCR and generative AI",
         "Developed scalable data processing pipelines for enterprise applications",
-        "Collaborated with senior engineers on production AI deployment strategies"
+        "Collaborated with senior engineers on production AI deployment strategies",
+        "Finetuned Opensource LLMs for various usecases"
       ],
       technologies: ["Python", "OCR", "Multilingual AI", "RAG", "Data Processing", "Machine Learning"],
+      gradient: "from-electric-purple to-electric-pink"
+    },
+    {
+      title: "AIML Intern",
+      company: "AIML Spectrum",
+      period: "June 2024 – July 2024",
+      location: "Bangalore, India",
+      type: "Internship",
+      achievements: [
+        "Achieved 60% user satisfaction by developing a RAG-based news chatbot processing 1,000+ daily news articles, with 95% retrieval accuracy using LangChain and Qdrant vector storage",
+        "Reduced patient wait times by 50% through implementing an AI healthcare chatbot, successfully handling 1000+ daily patient queries with 78% accuracy in vital sign monitoring",
+        "Automated medical PDF data extraction achieving 85% accuracy, reducing manual processing time by 75% while maintaining HIPAA compliance, processing 500+ medical records daily",
+      ],
+      technologies: ["Python", "OCR", "Medical Text Extraction", "Data Processing","Web Scrapping"],
       gradient: "from-electric-purple to-electric-pink"
     }
   ];

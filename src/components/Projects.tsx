@@ -1,42 +1,66 @@
-import { ExternalLink, Github, Zap, Heart, TrendingUp } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import React, { useState } from 'react';
+import { ExternalLink, Github, Zap, Heart, TrendingUp, Cpu, Cloud, Code } from 'lucide-react';
+// Assuming '@/components/ui/button' is correctly configured with Tailwind CSS
+import { Button } from './ui/button';
+
+// All project data, including new projects for the "Load More" functionality
+const allProjects = [
+  {
+    id: 1,
+    title: "AI-Powered Pet Health Companion",
+    description: "Intelligent healthcare system for pets using advanced AI diagnostics and real-time monitoring.",
+    icon: Heart,
+    techStack: ["Python", "FastAPI", "RAG", "OpenAI API", "React.js", "Docker"],
+    features: ["AI Health Diagnostics", "Real-time Monitoring", "Predictive Analytics"],
+    github: "https://github.com/Prureddy/petoai.com",
+    demo: "#", // Example live demo URL
+    gradient: "from-electric-blue to-electric-cyan"
+  },
+  {
+    id: 2,
+    title: "LLaMA 2 Fine-Tuning with Insurance Data",
+    description: "Custom fine-tuned LLaMA 2 model optimized for insurance document processing and analysis.",
+    icon: Zap,
+    techStack: ["Python", "LLaMA 2", "PEFT", "LoRA", "Transformers", "PyTorch"],
+    features: ["Model Fine-tuning", "Document Processing", "Insurance Analytics"],
+    github: "https://github.com/Prureddy/Finetuning_LLAMA_2_7B_model",
+    demo: null, // This project has no live demo
+    gradient: "from-electric-purple to-electric-pink"
+  },
+  {
+    id: 3,
+    title: "Financial AI Agent for Stock Analysis",
+    description: "Intelligent financial agent providing real-time stock analysis and investment recommendations.",
+    icon: TrendingUp,
+    techStack: ["Python", "LangChain", "Groq", "FastAPI", "React.js", "AWS"],
+    features: ["Real-time Analysis", "Investment Insights", "Risk Assessment"],
+    github: "https://github.com/Prureddy/Finance_Agent",
+    demo: "#", // Example live demo URL
+    gradient: "from-electric-cyan to-electric-blue"
+  },
+  {
+    id: 4,
+    title: "MindMate",
+    description: "AI-driven mental health companion that transforms emotional healthcare.",
+    icon: Cpu,
+    techStack: ["Python", "RAG", "Langchain", "Typescript", "Gemini","Prompt Engineering"],
+    features: ["Emotional Intelligence", "Emotion Classification", "Face Detection"],
+    github: "https://github.com/Prureddy/MindMate",
+    demo: null, // No live demo for this one
+    gradient: "from-electric-pink to-electric-purple"
+  },
+];
 
 const Projects = () => {
-  const projects = [
-    {
-      id: 1,
-      title: "AI-Powered Pet Health Companion",
-      description: "Intelligent healthcare system for pets using advanced AI diagnostics and real-time monitoring.",
-      icon: Heart,
-      techStack: ["Python", "FastAPI", "RAG", "OpenAI API", "React.js", "Docker"],
-      features: ["AI Health Diagnostics", "Real-time Monitoring", "Predictive Analytics"],
-      github: "https://github.com/Prureddy",
-      demo: "#",
-      gradient: "from-electric-blue to-electric-cyan"
-    },
-    {
-      id: 2,
-      title: "LLaMA 2 Fine-Tuning with Insurance Data",
-      description: "Custom fine-tuned LLaMA 2 model optimized for insurance document processing and analysis.",
-      icon: Zap,
-      techStack: ["Python", "LLaMA 2", "PEFT", "LoRA", "Transformers", "PyTorch"],
-      features: ["Model Fine-tuning", "Document Processing", "Insurance Analytics"],
-      github: "https://github.com/Prureddy",
-      demo: "#",
-      gradient: "from-electric-purple to-electric-pink"
-    },
-    {
-      id: 3,
-      title: "Financial AI Agent for Stock Analysis",
-      description: "Intelligent financial agent providing real-time stock analysis and investment recommendations.",
-      icon: TrendingUp,
-      techStack: ["Python", "LangChain", "Groq", "FastAPI", "React.js", "AWS"],
-      features: ["Real-time Analysis", "Investment Insights", "Risk Assessment"],
-      github: "https://github.com/Prureddy",
-      demo: "#",
-      gradient: "from-electric-cyan to-electric-blue"
-    }
-  ];
+  // State to manage how many projects are currently displayed
+  const [visibleProjects, setVisibleProjects] = useState(3);
+
+  // Function to load 3 more projects
+  const handleLoadMore = () => {
+    setVisibleProjects(prev => prev + 3);
+  };
+
+  const hasMoreProjects = visibleProjects < allProjects.length;
 
   return (
     <section id="projects" className="py-20 relative">
@@ -52,8 +76,11 @@ const Projects = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
-          {projects.map((project, index) => {
+          {allProjects.slice(0, visibleProjects).map((project) => {
             const IconComponent = project.icon;
+            // Check if a live demo exists
+            const hasDemo = project.demo && project.demo !== '#';
+
             return (
               <div 
                 key={project.id}
@@ -85,10 +112,11 @@ const Projects = () => {
                         asChild
                         variant="ghost"
                         size="icon"
-                        className="hover:bg-background/20 text-space-dark hover:text-space-dark/80"
+                        className={`text-space-dark hover:text-space-dark/80 ${!hasDemo ? 'opacity-50 cursor-not-allowed' : 'hover:bg-background/20'}`}
+                        disabled={!hasDemo}
                       >
                         <a 
-                          href={project.demo} 
+                          href={hasDemo ? project.demo : '#'} 
                           target="_blank" 
                           rel="noopener noreferrer"
                           aria-label="View live demo"
@@ -138,43 +166,26 @@ const Projects = () => {
                 </div>
 
                 {/* Project Footer */}
-                <div className="px-6 pb-6">
-                  <div className="flex gap-3">
-                    <Button
-                      asChild
-                      className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
-                    >
-                      <a 
-                        href={project.demo} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink size={16} className="mr-2" />
-                        Live Demo
-                      </a>
-                    </Button>
-                    <Button
-                      asChild
-                      variant="outline"
-                      className="flex-1 border-card-border hover:border-primary"
-                    >
-                      <a 
-                        href={project.github} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        <Github size={16} className="mr-2" />
-                        Code
-                      </a>
-                    </Button>
-                  </div>
-                </div>
+                {/* The footer buttons for Live Demo and Code have been removed */}
               </div>
             );
           })}
         </div>
 
-        {/* Call to Action */}
+        {/* Load More Button */}
+        {hasMoreProjects && (
+          <div className="text-center mt-12">
+            <Button
+              onClick={handleLoadMore}
+              variant="outline"
+              className="border-card-border hover:border-primary px-8 py-3"
+            >
+              Load More Projects
+            </Button>
+          </div>
+        )}
+
+        {/* Original Call to Action */}
         <div className="text-center mt-16">
           <Button
             asChild
