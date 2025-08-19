@@ -1,8 +1,6 @@
 import React from 'react';
 import { Sparkles, Brain, Code, Globe, MessageSquare } from 'lucide-react';
-
-// The user-uploaded image is accessible via this ID
-const profilePictureUrl = "src/assets/profile.jpeg";
+import profileImage from '@/assets/profile.jpeg';
 
 const About = () => {
   return (
@@ -22,7 +20,7 @@ const About = () => {
               <div className="md:col-span-1 flex items-center justify-center">
                 <div className="p-2 border-4 border-electric rounded-full transition-transform duration-300 hover:scale-105">
                   <img
-                    src={profilePictureUrl}
+                   src={profileImage}
                     alt="Pruthvi S profile"
                     className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full shadow-lg"
                     onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
