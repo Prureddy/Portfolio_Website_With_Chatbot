@@ -80,8 +80,6 @@ async def ask_question(request: QueryRequest):
     try:
         # Load the saved FAISS vector database
         embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
-        # Note: 'allow_dangerous_deserialization=True' is needed for loading a FAISS index from disk.
-        # Use with caution and only for trusted sources.
         new_db = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
 
         # Perform a similarity search on the vector DB to retrieve relevant documents
