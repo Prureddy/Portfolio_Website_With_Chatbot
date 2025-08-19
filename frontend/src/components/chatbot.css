@@ -1,0 +1,68 @@
+/* Chatbot.css */
+@keyframes dot-animation {
+  0% { opacity: 0.2; }
+  20% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1rem;
+}
+
+.loader-dot {
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: white; /* Adjust to match your button color */
+  border-radius: 50%;
+  margin: 0 0.125rem;
+  animation: dot-animation 1.4s infinite linear;
+}
+
+.loader-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* For the message bubble loader */
+@keyframes bubble-loader {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1.0); }
+}
+
+.dot-flashing {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #718096; /* Adjust color as needed */
+  color: #718096; /* Same as background */
+  animation: bubble-loader 1.4s infinite ease-in-out both;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #718096; /* Adjust color as needed */
+  animation: bubble-loader 1.4s infinite ease-in-out both;
+}
+
+.dot-flashing::before {
+  left: -12px;
+  animation-delay: -0.16s;
+}
+
+.dot-flashing::after {
+  left: 12px;
+  animation-delay: 0.16s;
+}

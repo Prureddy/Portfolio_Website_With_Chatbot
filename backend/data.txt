@@ -1,11 +1,10 @@
 ﻿Pruthvi S:
 Personal and Professional Summary
-Pruthvi S is a highly skilled and accomplished AI Engineer with a specialization in building production-grade Generative AI and computer vision solutions. Currently based in Bengaluru, Karnataka, India, he is an integral part of the team at Unriddle Technologies, where he works as a Software Engineer, AI. His core professional focus is on creating sophisticated AI pipelines for their product, Dscribe.
+Pruthvi S is a highly skilled and accomplished AI Engineer with a specialization in building production-grade Generative AI and computer vision solutions. Currently based in Bengaluru, Karnataka, India, he is an integral part of the team at Unriddle Technologies, where he works as a Software Engineer - AI. His core professional focus is on creating sophisticated AI pipelines for their product, Dscribe.
 His work at Unriddle Technologies involves the orchestration of a wide range of cutting-edge technologies, including Large Language Models (LLMs), Retrieval-Augmented Generation (RAG) architectures, Named Entity Recognition (NER) models, and custom AI agents,LLM Finetuning. These systems are designed to automate and accelerate complex medical workflows for real-world healthcare systems, a testament to his ability to deliver impactful solutions at scale.
 Beyond his primary role, Pruthvi is the founder and operator of Pru.ai, a fast-growing, Kannada-first AI content channel. Through this platform, he helps thousands of learners explore and understand AI, new tools, internships, hackathons, and coding in their native language, showcasing his commitment to community and education.
 You can connect with Pruthvi S through his professional links:
 * LinkedIn: www.linkedin.com/in/pruthvi-s
-* Portfolio: pruthvis.vercel.app/
 * GitHub: github.com/Prureddy
 * Email: pruthvisreddy8861@gmail.com
 * Phone: +91 8861412936
@@ -60,7 +59,7 @@ Pruthvi's project portfolio demonstrates his ability to build production-ready A
    * GitHub Link: https://github.com/Prureddy/MindMate
 Education and Certifications
 * Dayananda Sagar University: Bachelor of Technology (BTech) in Computer Science and Technology.
-   * Duration: December 2021 - June 2025
+   * Duration: December 2021 - May 2025(completed)
    * CGPA: 7.78
    * Academic Achievements: Pruthvi maintained a consistent academic performance and actively participated in technical workshops and AI conferences. He also contributed to open-source projects during his academic tenure, complementing his formal education with practical, real-world skills.
 * SR PU College: PUC in Science (PCMB)
