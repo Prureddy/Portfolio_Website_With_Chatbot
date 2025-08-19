@@ -3,11 +3,11 @@ import { Trophy, Users, Zap, Target, ArrowLeft, ArrowRight } from 'lucide-react'
 import avt1 from '@/assets/avt1.png';
 import avt2 from '@/assets/avt2.png';
 import ddt1 from '@/assets/ddt1.png';
-import ddt2 from '@/assets/ddt1.png';
-import ddt3 from '@/assets/ddt1.png';
-import anz1 from '@/assets/ddt1.png';
-import anz2 from '@/assets/ddt1.png';
-import anz3 from '@/assets/ddt1.png';
+import ddt2 from '@/assets/ddt2.png';
+import ddt3 from '@/assets/ddt3.png';
+import anz1 from '@/assets/anz1.png';
+import anz2 from '@/assets/anz2.png';
+import anz3 from '@/assets/anz3.png';
 
 const Hackathons = () => {
   // Hackathon data must be declared before it's used in hooks or functions.
