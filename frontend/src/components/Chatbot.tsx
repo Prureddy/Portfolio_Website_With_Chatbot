@@ -152,7 +152,7 @@ const Chatbot = () => {
     setIsLoading(true); // Start loading
 
     try {
-      const response = await fetch('https://portfolio-website-with-chatbot-1.onrender.com/ask/', {
+      const response = await fetch('https://portfolio-website-with-chatbot.onrender.com/ask/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ user_question: userMessage.text }),
