@@ -18,7 +18,8 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 app = FastAPI()
 
 origins = [
-    "http://localhost:8080" 
+    "http://localhost:8080",
+    "https://pruthvis.vercel.app/"
 ]
 
 app.add_middleware(
