@@ -23,15 +23,12 @@ const Chatbot = () => {
   const [inputValue, setInputValue] = useState('');
   const [showHint, setShowHint] = useState(false);
 
-  // Open chatbot programmatically via a CustomEvent
   useEffect(() => {
     const handler = () => { setIsOpen(true); setShowHint(false); };
-    // Cast to any to avoid TS complaining about custom event type
-    window.addEventListener('open-chatbot' as any, handler as any);
-    return () => window.removeEventListener('open-chatbot' as any, handler as any);
+    window.addEventListener('open-chatbot', handler);
+    return () => window.removeEventListener('open-chatbot', handler);
   }, []);
 
-  // Show hint bubble on first visit only
   useEffect(() => {
     if (!localStorage.getItem('first_visit_hint_v1')) {
       setShowHint(true);
@@ -41,62 +38,52 @@ const Chatbot = () => {
     }
   }, []);
 
-  const quickResponses = {
-    skills: "Pruthvi specializes in Generative AI, RAG systems, LLM fine-tuning, Python, FastAPI, and cloud technologies like AWS. He's experienced in building production-ready AI systems for healthcare and finance.",
-    projects: "Some key projects include an AI-Powered Pet Health Companion, LLaMA 2 Fine-Tuning with Insurance Data, and a Financial AI Agent for Stock Analysis. Each project showcases different aspects of his AI expertise.",
-    experience: "Pruthvi is currently an AI Engineer at Unriddle Technologies, where he leads RAG-based medical systems. Previously, he was a Student Intern at Unisys, enhancing multilingual chatbots and building AI-powered solutions.",
-    contact: "You can reach Pruthvi at pruthvisreddy8861@gmail.com or +91 8861412936. He's also available on LinkedIn and GitHub for professional connections.",
-    education: "Pruthvi holds a B.Tech in Computer Science and Technology from Dayananda Sagar University with a CGPA of 7.78. He's also completed several AI/ML certifications from Coursera."
-  };
-
-  const getAIResponse = (userMessage: string): string => {
-    const lowerMessage = userMessage.toLowerCase();
-    
-    if (lowerMessage.includes('skill') || lowerMessage.includes('technology') || lowerMessage.includes('technical')) {
-      return quickResponses.skills;
-    }
-    if (lowerMessage.includes('project') || lowerMessage.includes('work') || lowerMessage.includes('portfolio')) {
-      return quickResponses.projects;
-    }
-    if (lowerMessage.includes('experience') || lowerMessage.includes('job') || lowerMessage.includes('career')) {
-      return quickResponses.experience;
-    }
-    if (lowerMessage.includes('contact') || lowerMessage.includes('reach') || lowerMessage.includes('email') || lowerMessage.includes('phone')) {
-      return quickResponses.contact;
-    }
-    if (lowerMessage.includes('education') || lowerMessage.includes('degree') || lowerMessage.includes('university')) {
-      return quickResponses.education;
-    }
-    if (lowerMessage.includes('hello') || lowerMessage.includes('hi') || lowerMessage.includes('hey')) {
-      return "Hello! I'm here to help you learn more about Pruthvi S. Feel free to ask about his skills, projects, experience, or how to get in touch!";
-    }
-    
-    return "That's a great question! For detailed information, I'd recommend checking out the relevant sections on this portfolio or reaching out to Pruthvi directly at pruthvisreddy8861@gmail.com.";
-  };
-
-  const handleSendMessage = () => {
+  const handleSendMessage = async () => {
     if (!inputValue.trim()) return;
 
     const userMessage: Message = {
       id: Date.now().toString(),
       text: inputValue,
-      sender: 'user',
+      sender: 'user', // Corrected: Explicitly set to 'user'
       timestamp: new Date()
     };
 
     setMessages(prev => [...prev, userMessage]);
     setInputValue('');
 
-    // Simulate AI response
-    setTimeout(() => {
+    try {
+      const response = await fetch('http://127.0.0.1:8000/ask/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ user_question: userMessage.text }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+
       const botMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: getAIResponse(inputValue),
-        sender: 'bot',
+        text: data.answer,
+        sender: 'bot', // Corrected: Explicitly set to 'bot'
         timestamp: new Date()
       };
+
       setMessages(prev => [...prev, botMessage]);
-    }, 1000);
+    } catch (error) {
+      console.error("Failed to fetch from backend:", error);
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        text: "Sorry, I'm unable to connect to the assistant right now. Please try again later.",
+        sender: 'bot', // Corrected: Explicitly set to 'bot'
+        timestamp: new Date()
+      };
+      setMessages(prev => [...prev, errorMessage]);
+    }
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {

@@ -1,0 +1,85 @@
+﻿Pruthvi S:
+Personal and Professional Summary
+Pruthvi S is a highly skilled and accomplished AI Engineer with a specialization in building production-grade Generative AI and computer vision solutions. Currently based in Bengaluru, Karnataka, India, he is an integral part of the team at Unriddle Technologies, where he works as a Software Engineer, AI. His core professional focus is on creating sophisticated AI pipelines for their product, Dscribe.
+His work at Unriddle Technologies involves the orchestration of a wide range of cutting-edge technologies, including Large Language Models (LLMs), Retrieval-Augmented Generation (RAG) architectures, Named Entity Recognition (NER) models, and custom AI agents,LLM Finetuning. These systems are designed to automate and accelerate complex medical workflows for real-world healthcare systems, a testament to his ability to deliver impactful solutions at scale.
+Beyond his primary role, Pruthvi is the founder and operator of Pru.ai, a fast-growing, Kannada-first AI content channel. Through this platform, he helps thousands of learners explore and understand AI, new tools, internships, hackathons, and coding in their native language, showcasing his commitment to community and education.
+You can connect with Pruthvi S through his professional links:
+* LinkedIn: www.linkedin.com/in/pruthvi-s
+* Portfolio: pruthvis.vercel.app/
+* GitHub: github.com/Prureddy
+* Email: pruthvisreddy8861@gmail.com
+* Phone: +91 8861412936
+Professional Experience
+1. AI Engineer at Unriddle Technologies Private Limited
+* Duration: June 2025 – Present (3 months)
+* Location: Shimoga, Karnataka, India
+* Elaboration: In this role, Pruthvi is responsible for the end-to-end development of AI modules for the Dscribe platform. His key responsibilities include working on Doctor Handwritten Optical Character Recognition (OCR), developing robust RAG pipelines for knowledge retrieval, and applying advanced prompt engineering techniques to refine model outputs. A significant part of his work involves creating a medical summary system that can accurately and efficiently process information. The technologies he uses in this role include React, Python, Django, Kotlin, Redis, and Celery.
+2. Freelancer (Self-Employed)
+* Duration: January 2024 – Present (1 year 8 months)
+* Location: Bengaluru, Karnataka, India
+* Elaboration: As a freelancer, Pruthvi has successfully completed four to five projects in the domains of Machine Learning, Deep Learning, Generative AI, and Web Development. He has built a strong technical skill set and has a diverse clientele, primarily consisting of final-year engineering students, BCA, MCA students, and IT employees. This experience highlights his ability to adapt to various project requirements and deliver quality results independently.
+3. Student Intern (AIML) at Unisys
+* Duration: October 2024 – May 2025 (8 months)
+* Location: RGA Techpark, Bengaluru, India
+* Elaboration: During his internship at Unisys, Pruthvi made significant contributions to several AI/ML projects. He focused on LLM Finetuning and Evaluation, successfully fine-tuning open-source models like Mistral 7B, Phi-3, LLAMA 3.2 3B, and LLAMA 2 7B using advanced techniques such as LoRA and QLORA. He utilized frameworks like Unsloth, Deepspeed, and Azure to enhance fine-tuning efficiency and benchmark performance.
+   * LLM-Powered Math Solver: He individually developed an innovative AI-powered math equation solver that integrated Qwen AI and Wolfram Alpha to provide detailed, step-by-step logical and computational explanations. This project also featured an interactive equation editor built with MathLive.js and OCR capabilities (Pix2Text) to recognize both handwritten and printed equations.
+   * AWS Bedrock Tools Integration: He worked with AWS Bedrock services including OpenSearch, Embedding Models, Amazon Kendra, and Form Recognizer to create systems for intelligent document understanding and enhanced retrieval.
+4. AIML Intern at AIML Spectrum
+* Duration: July 2024 – August 2024 (2 months)
+* Location: Bengaluru, Karnataka, India
+* Elaboration: Pruthvi contributed to three major projects during this internship, showcasing his versatility in AI application development.
+   * News Chatbot: He developed a RAG-based news chatbot that fetches news data from APIs, embeds it into vector databases, and provides user-specific answers. The chatbot includes features like summarization and filters by date and category.
+   * Doctor Chatbot: He created an OpenAI-based chatbot for doctors and patients with both admin and user panels. The bot uses personal and medical data to answer questions and facilitates communication, featuring a dashboard to display vital signs in a graph format.
+   * Medical Data Extraction: He worked on extracting data from both bordered and borderless tables in medical PDF files, a crucial skill for healthcare data processing.
+5. Web Development Intern at CodeClause
+* Duration: September 2023 - October 2023 (2 months)
+6. Web Developer at ADVERK EDUCATION
+* Duration: January 2023 - February 2023 (2 months)
+* Elaboration: As an intern, he collaborated with a team of developers and gained hands-on experience in AngularJS, creating a project called the 'Employee Management System'.
+Featured Projects
+Pruthvi's project portfolio demonstrates his ability to build production-ready AI systems that address real-world challenges.
+1. AI-Powered Pet Health Companion
+   * Description: This is an end-to-end Generative AI system that leverages RAG, AI guardrails, and AI agents for real-time pet health monitoring and disease detection. The system incorporates multimodal AI, including text, voice, and image-based diagnostics. It also features a conversational memory, multilingual support, and interactive UI/UX for an enhanced user experience.
+   * Key Features: AI Health Diagnostics, Real-time Monitoring, Predictive Analytics, Conversational Memory, Multilingual Support.
+   * Tech Stack: Python, FastAPI, RAG, OpenAI API, React.js, Docker, TypeScript, LangChain, Gemini, NumPy, Pandas, Scikit-Learn, TensorFlow, Qdrant, ChromaDB.
+   * GitHub Link: https://github.com/Prureddy/petoai
+2. LLaMA 2 Fine-Tuning with Insurance Data
+   * Description: This project focused on fine-tuning the LLAMA 2 Large Language Model using insurance-specific datasets to enhance its domain knowledge and generation capabilities. The project utilized Parameter-Efficient Fine-Tuning (PEFT) techniques, specifically Low-Rank Adaptation (LoRA) and Unsloth, along with quantization for optimization.
+   * Key Features: Model Fine-tuning, Document Processing, Improved Contextual Understanding for Insurance.
+   * Tech Stack: Python, LLaMA 2, PEFT, LoRA, Transformers, PyTorch, Pandas, Scikit-Learn, Unsloth.
+   * GitHub Link: https://github.com/Prureddy/Finetuning_LLAMA_2_7B_model
+3. Financial AI Agent for Stock Analysis
+   * Description: A multi-agent AI system designed to provide real-time financial data retrieval, stock price analysis, and investment recommendations. The system integrates external APIs like YFinance API and DuckDuckGo to ensure accurate and up-to-date market insights.
+   * Key Features: Real-time Analysis, Investment Insights, Risk Assessment, Company News Aggregation.
+   * Tech Stack: Python, LangChain, Groq, FastAPI, React.js, AWS, LLaMA-3.3-70B, Phi-Agents, YFinance API, DuckDuckGo API.
+   * GitHub Link: https://github.com/Prureddy/Finance_Agent
+4. MindMate
+   * Description: An AI-driven mental health companion that aims to transform emotional healthcare. The system leverages AI to understand and respond to user emotions.
+   * Key Features: Emotional Intelligence, Emotion Classification, Face Detection.
+   * Tech Stack: Python, RAG, Langchain, TypeScript, Gemini, Prompt Engineering.
+   * GitHub Link: https://github.com/Prureddy/MindMate
+Education and Certifications
+* Dayananda Sagar University: Bachelor of Technology (BTech) in Computer Science and Technology.
+   * Duration: December 2021 - June 2025
+   * CGPA: 7.78
+   * Academic Achievements: Pruthvi maintained a consistent academic performance and actively participated in technical workshops and AI conferences. He also contributed to open-source projects during his academic tenure, complementing his formal education with practical, real-world skills.
+* SR PU College: PUC in Science (PCMB)
+   * Duration: May 2019 - May 2021
+   * Percentage: 96%
+* SJPN Rural Highschool Kannada Medium: SSLC in Science, Social Science, Mathematics
+   * Duration: June 2017 - May 2019
+   * Percentage: 87%
+Professional Certifications:
+* Generative AI for Everyone (Coursera - DeepLearning.AI, 2024)
+* Machine Learning Specialization (Coursera - Stanford, 2023)
+* AWS Cloud Practitioner (Amazon Web Services, 2023)
+* Introduction to Programming using Python (Coursera)
+* Supervised Machine Learning: Regression and Classification
+Achievements and Awards
+Pruthvi has a proven track record of competitive success in hackathons, showcasing his ability to innovate and solve problems under pressure.
+* Track Prize Winner at Aventus 2.0 Hackathon (2024): His team won a track prize for developing an AI-Powered Pet Health Analytics Platform. This comprehensive AI solution offered real-time monitoring and predictive insights for pet health data. The competition involved over 500 participants, highlighting the significance of this achievement.
+* First Prize Winner at DDT Hackathon (2024): He secured first place by creating a Digital Transformation Solution that uses AI automation and intelligent workflows to streamline business processes. This victory was against a field of over 300 participants.
+* Runner-up at Creatathon 2023 (ANZ): Pruthvi's team was the runner-up for their project, HealthGenieAI, an AI-powered doctor health assistant. This platform provided personalized insights and recommendations for patients based on their treatment history.
+* Other Achievements: He is also a winner of the AIML Track prize in the Aventus 2.0 Hackathon and was a Top 10 Finalist in 5 other hackathons, demonstrating his consistent performance and competitive spirit.
+Extracurricular Activities
+In addition to his professional and academic pursuits, Pruthvi is the founder of Pru.ai, a content channel dedicated to making AI and technology accessible to Kannada-speaking audiences. This initiative showcases his passion for education and his proactive approach to community building. The channel covers a wide range of topics, including AI tools, internships, hackathons, and programming, providing valuable resources to thousands of learners in their native language. This activity demonstrates his leadership, communication, and entrepreneurial skills, as well as his commitment to fostering the next generation of AI enthusiasts.

@@ -12,7 +12,7 @@ const allProjects = [
     icon: Heart,
     techStack: ["Python", "FastAPI", "RAG", "OpenAI API", "React.js", "Docker"],
     features: ["AI Health Diagnostics", "Real-time Monitoring", "Predictive Analytics"],
-    github: "https://github.com/Prureddy/petoai.com",
+    github: "https://github.com/Prureddy/petoai",
     demo: "#", // Example live demo URL
     gradient: "from-electric-blue to-electric-cyan"
   },
