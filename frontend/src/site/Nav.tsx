@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { scrollTo } from './lib/motion';
 import ThemeToggle from './ThemeToggle';
@@ -55,6 +56,12 @@ export default function Nav() {
                 {l.label}
               </button>
             ))}
+            <Link
+              to="/blog"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Writing
+            </Link>
           </div>
 
           <div className="flex items-center gap-2">
@@ -88,6 +95,9 @@ export default function Nav() {
               {l.label}
             </button>
           ))}
+          <Link to="/blog" onClick={() => setOpen(false)} className="font-display text-2xl font-semibold text-foreground">
+            Writing
+          </Link>
         </div>
       )}
     </>

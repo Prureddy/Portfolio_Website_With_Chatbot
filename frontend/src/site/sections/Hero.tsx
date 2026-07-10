@@ -12,7 +12,7 @@ export default function Hero() {
         {/* left: copy */}
         <div>
           <div className="eyebrow mb-4">
-            <span className="h-px w-6 bg-border" /> AI Engineer · Healthcare AI
+            <span className="h-px w-6 bg-border" /> Founder · AI Engineer
           </div>
 
           <h1 className="font-display text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
@@ -24,8 +24,9 @@ export default function Hero() {
           </p>
 
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
-            Currently an AI Engineer at DScribe, building agentic AI for healthcare — LLMs, RAG,
-            multi-agent systems, voice AI and OCR.
+            Founder of <span className="text-foreground">DischargeX</span> — India's first
+            voice-enabled discharge summary generator, <span className="text-foreground">acquired by
+            DScribe</span>, where I now build agentic AI for healthcare.
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-3">

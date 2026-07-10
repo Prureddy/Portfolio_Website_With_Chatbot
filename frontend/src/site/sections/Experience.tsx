@@ -7,7 +7,7 @@ const JOBS = [
     role: 'AI Engineer',
     company: 'DScribe',
     period: 'Jun 2025 – Present',
-    location: 'Bangalore, India',
+    location: 'Shivamogga, India',
     type: 'Full-time',
     points: [
       'Built agentic AI that turns handwritten doctor case sheets into structured discharge summaries — cutting documentation time ~80% at 90%+ accuracy',
@@ -16,6 +16,20 @@ const JOBS = [
       'Built voice AI agents and n8n automation pipelines shipped to production',
     ],
     stack: ['Agentic AI', 'RAG', 'LangGraph', 'LLM Fine-tuning', 'OCR', 'Voice AI', 'FastAPI'],
+  },
+  {
+    role: 'Founder',
+    company: 'DischargeX',
+    period: 'Dec 2025 – May 2026',
+    location: 'Bengaluru, India',
+    type: 'Startup · Acquired',
+    points: [
+      "Founded DischargeX — India's first voice-enabled discharge summary generator, turning a doctor's voice into a complete, structured discharge summary",
+      'Ran live pilots across 10 hospitals in Bengaluru over ~6 months, validating it in real clinical workflows',
+      'Built the product end to end — voice capture, the AI summarization pipeline, and the app around it',
+      'Acquired by DScribe, where the product and team continue to scale',
+    ],
+    stack: ['Voice AI', 'LLMs', 'RAG', 'FastAPI', 'Healthcare AI'],
   },
   {
     role: 'AI Engineer',

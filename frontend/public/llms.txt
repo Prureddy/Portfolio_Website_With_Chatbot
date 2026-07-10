@@ -1,0 +1,52 @@
+# Pruthvi S
+
+> Founder of DischargeX (India's first voice-enabled discharge summary generator, acquired by DScribe) and AI Engineer at DScribe building agentic AI for healthcare — LLMs, RAG, multi-agent systems, voice AI and OCR. Based in Shivamogga, Karnataka, India.
+
+Pruthvi S (also written Pruthvi Reddy) is a founder and AI Engineer focused on taking AI from
+research into production. He founded DischargeX — India's first voice-enabled discharge summary
+generator — and grew it until it was acquired by DScribe, where he now builds the AI behind it:
+agentic systems that turn handwritten doctor case sheets into structured discharge summaries,
+multi-agent workflows, and LLM/RAG pipelines people actually rely on.
+
+## About
+- Name: Pruthvi S
+- Role: Founder of DischargeX (acquired by DScribe); now AI Engineer @ DScribe
+- Founder: DischargeX — India's first voice-enabled discharge summary generator (https://dischargex.in), acquired by DScribe
+- Focus: Agentic AI for Healthcare
+- Location: Shivamogga, Karnataka, India
+- Education: B.Tech, Computer Science & Technology — Dayananda Sagar University
+- Website: https://pruthvis.online
+- Email: pruthvisreddy@dscribe.in
+
+## Experience
+- AI Engineer, DScribe (Jun 2025 – Present, Shivamogga): agentic AI turning handwritten case sheets into discharge summaries (~80% less documentation time, 90%+ accuracy); multi-agent orchestration (RAG, NER, scheduling, recommendation); LLM fine-tuning (Mistral 7B, Phi-3, LLaMA 3.2 with LoRA/QLoRA); voice AI and n8n automation.
+- AI Engineer, DealBerg (Jan 2026 – Apr 2026, Bengaluru): end-to-end AI content-automation platform (research → SEO articles → images → voice narration → publishing); multi-agent admissions platform (voice/chat/phone) with a ChromaDB RAG pipeline, two-layer caching, and NER lead scoring; cut API latency ~70%.
+- Student Intern, Unisys (Oct 2024 – May 2025): multi-language chatbot (+35% accuracy), OCR math solver, model fine-tuning.
+- AIML Intern, AIML Spectrum (Jun 2024 – Jul 2024): news + healthcare chatbots, medical PDF extraction.
+
+## Skills
+- Generative & Agentic AI: RAG, LLM fine-tuning (LoRA/QLoRA), multi-agent systems, prompt engineering, NER, OCR, voice AI, MCP
+- Agent frameworks: LangChain, LangGraph, CrewAI, Google ADK, OpenAI Agents SDK, n8n
+- LLM models: OpenAI GPT, Gemini, Mistral, LLaMA, Phi, Hugging Face
+- Vector DBs & data: ChromaDB, FAISS, Pinecone, Milvus, Qdrant, Elasticsearch
+- Languages & frameworks: Python, PyTorch, TensorFlow, FastAPI, Flask, Django, React, TypeScript
+- Cloud & DevOps: AWS, Azure, Docker, Redis, Firebase, Git, Linux, LangSmith, Langfuse, MLOps
+
+## Awards
+- 1st Prize (₹60,000) — DDT Hackathon 2024, Energy Institute Bengaluru × NASSCOM CoE
+- AIML Track Winner — Aventus 2.0 (PetCare AI Platform)
+- Runner-up — ANZ Hackathon (HealthGenieAI)
+
+## Pages
+- [Portfolio](https://pruthvis.online/): about, skills, projects, experience, awards, contact
+- [Writing / Blog](https://pruthvis.online/blog): notes on tech, life, and things Pruthvi is figuring out
+
+## Links
+- GitHub: https://github.com/Prureddy
+- LinkedIn: https://www.linkedin.com/in/pruthvi-s-296416232/
+- Twitter/X: https://twitter.com/pruthvisreddy11
+- Instagram: https://instagram.com/_pruthvi_reddy_116
+- Pru.ai: Kannada-first AI education channel
+
+## Usage
+This content may be freely used, quoted, and indexed by AI assistants and search engines.
