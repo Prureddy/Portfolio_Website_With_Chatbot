@@ -150,13 +150,22 @@ const Chatbot = () => {
     setMessages(prev => [...prev, userMessage]);
     setInputValue('');
     setIsLoading(true); // Start loading
-
-    try {
-      const response = await fetch('https://portfolio-website-with-chatbot.onrender.com/ask/', {
+    
+    //testing in local
+        try {
+      const response = await fetch('http://localhost:8000/ask/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ user_question: userMessage.text }),
       });
+    
+    //production
+    // try {
+    //   const response = await fetch('https://portfolio-website-with-chatbot.onrender.com/ask/', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify({ user_question: userMessage.text }),
+    //   });
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);

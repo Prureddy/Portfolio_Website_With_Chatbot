@@ -21,6 +21,9 @@ export default {
 			fontFamily: {
 				inter: ['Inter', 'sans-serif'],
 				mono: ['JetBrains Mono', 'monospace'],
+				display: ['Space Grotesk', 'sans-serif'],
+				narrative: ['Space Grotesk', 'sans-serif'],
+				hero: ['Orbitron', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -28,13 +31,35 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				
+
 				// Electric AI Theme
 				electric: {
 					blue: 'hsl(var(--electric-blue))',
 					cyan: 'hsl(var(--electric-cyan))',
 					purple: 'hsl(var(--electric-purple))',
 					pink: 'hsl(var(--electric-pink))',
+				},
+
+				// Modern AI portfolio brand
+				brand: {
+					DEFAULT: 'hsl(var(--brand) / <alpha-value>)',
+					soft: 'hsl(var(--brand-soft) / <alpha-value>)',
+					cyan: 'hsl(var(--brand-2) / <alpha-value>)',
+				},
+
+				// Arcane "Machine Mage" Theme
+				arcane: {
+					gold: 'hsl(var(--arcane-gold))',
+					amber: 'hsl(var(--arcane-amber))',
+					violet: 'hsl(var(--arcane-violet))',
+					teal: 'hsl(var(--arcane-teal))',
+					ember: 'hsl(var(--arcane-ember))',
+					ink: 'hsl(var(--arcane-ink))',
+				},
+				void: {
+					DEFAULT: 'hsl(var(--void))',
+					deep: 'hsl(var(--void-deep))',
+					soft: 'hsl(var(--void-soft))',
 				},
 				
 				// Space Theme

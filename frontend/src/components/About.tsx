@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sparkles, Brain, Code, Globe, MessageSquare } from 'lucide-react';
-import profileImage from '@/assets/profile.jpeg';
+import profileImage from '@/assets/profile.png';
 
 const About = () => {
   return (
