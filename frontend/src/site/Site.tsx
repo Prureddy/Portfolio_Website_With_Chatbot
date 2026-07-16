@@ -9,6 +9,7 @@ import Experience from './sections/Experience';
 import Hackathons from './sections/Hackathons';
 import Education from './sections/Education';
 import PruAi from './sections/PruAi';
+import Writing from './sections/Writing';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 
@@ -45,6 +46,7 @@ export default function Site() {
         <Hackathons />
         <Education />
         <PruAi />
+        <Writing />
         <Contact />
       </main>
       <Footer />

@@ -40,7 +40,7 @@ export default function Contact() {
   return (
     <Section id="contact">
       <SectionHeading
-        index="08"
+        index="09"
         label="Contact"
         title="Let's"
         accent="connect"
